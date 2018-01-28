@@ -3,7 +3,7 @@
 # !!!!! CHANGE FILE NAME !!!!!!
 #------------------------------------------------------------------------
 f = open("haushalt6_clean.csv", "w+")
-t = open("Haushalt6.csv", "r")
+t = open("haushalt6.csv", "r")
 
 #------------------------------------------------------------------------
 # Creates one line of text
@@ -59,7 +59,7 @@ def more_spaces(s, l):
     count = len(s)
     l[-1] = s[0]
     for index in range(1, count):       # ERROR! Cullumn gets copied twice for some reason
-        l.append(s[index])              # or appended twice...
+        l.append(s[index])              # or appended twice... In very rare cases though.
     return l
     
     
